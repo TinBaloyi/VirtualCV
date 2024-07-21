@@ -129,7 +129,7 @@ span{
     top: 3rem;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 25px beige;
     cursor: pointer;
     transition: 0.45s ease-in-out;
 }
@@ -157,7 +157,7 @@ span{
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
     border-radius: 50%;
-    color: brown;
+    color: beige;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 
@@ -166,13 +166,13 @@ span{
     color: var(--text-color);
     transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
-    background-color: var(--main-color);
+    background-color: var(--main-color));
 }
 
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--main-color);
+    background: beige;
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
@@ -206,13 +206,14 @@ span{
     background-color: var(--main-color);
     color: black;
 }
-
 .text-animation{
     font-size: 34px;
     font-weight: 600;
     min-width: 200px;
 }
-
+.text-animation span{
+    position: relative;
+}
 .text-animation span::before{
     content: "IT Student";
     color: var(--main-color);
@@ -226,223 +227,6 @@ span{
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
-    animation: cursor 0.56 infinite,typing 20s steps(14) infinite;
+    animation: cursor 0.6s infinite,typing 20s steps(14) infinite;
 }
 
-@keyframes cursor{
-    to{
-        border-left: 2px solid var(--main-color);
-    }
-}
-@keyframes words{
-    0%,
-    20%{
-        content: "IT Student";
-    }
-    21%,
-    40%{
-        content: "Aspiring Data Scientist";
-    }
-
-}
-@keyframes typing{
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-        width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%{
-        width: calc(100% + 8px);
-    }
-
-}
-.heading{
-    font-size: 8rem;
-    text-align: center;
-    margin: 5rem 0;
-}
-.education{
-    padding: 100px 15px;
-    background: var(--second-bg-color);
-}
-.education h2{
-    margin-bottom: 5rem;
-}
-.timeline-items{
-    max-width: 1200px;
-    margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-.timeline-items::before{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
-    left: calc(50% - 1px);
-}
-.timeline-items{
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
-}
-.timeline-items:last-child{
-    margin-bottom: 0;
-}
-.timeline-items:nth-child(odd){
-    padding-right: calc(50% + 30px);
-    text-align: right;
-}
-.timeline-items:nth-child(even){
-    padding-left: calc(50% + 30px);
-}
-.timeline-dot{
-    height: 21px;
-    width: 21px;
-    background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
-}
-.timeline-date{
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    margin: 6px 0 15px;
-}
-.timeline-content{
-    background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
-    padding: 30px 50px;
-    border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.timeline-content:hover{
-    transform: scale(1.05s);
-    box-shadow: 0 0 25px var(--main-color);
-}
-.timeline-content h3{
-    font-size: 20px;
-    color: white;
-    margin: 0 0 10px;
-    font-weight: 500;
-}
-.timeline-content p{
-    color: white;
-    font-size: 16px;
-    font-weight: 16px;
-    line-height: 22px;
-}
-::-webkit-scrollbar{
-    width: 15px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--main-color);
-}
-::-webkit-scrollbar-track{
-    background-color: var(--main-color);
-}
-.contact{
-    background-color: var(--bg-color);
-}
-.contact h2{
-    margin-bottom: 3rem;
-    color: white;
-}
-.contact form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
-}
-.contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
-}
-.contact form btn{
-    margin-top: 2rem;
-}
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 40px 0;
-    background-color: var(--second-bg-color);
-
-}
-.footer .social{
-    text-align: center;
-    padding-bottom: 25px;
-    color: var(--main-color);
-}
-.footer .social a{
-    font-size: 25px;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 10px;
-    transition: 0.3s ease-in-out;
-}
-.footer .social a:hover{
-    transform: scale(1.2) translateY(-10px);
-    background-color: var(--main-color);
-    color: black;
-    box-shadow: 0 0 25px var(--main-color);
-}
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-.footer ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover{
-    border-bottom: 3px solid var(--main-color);
-}
-.footer ul li{
-    display: inline-block;
-    padding: 0 15px;
-}
