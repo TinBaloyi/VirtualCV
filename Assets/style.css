@@ -14,25 +14,21 @@
 
 }
 :root{
-    --bg-color: #dedcca;
+    --bg-color: black;
     --second-bg-color:#9f5050;
     --text-color: white;
     --main-color: #00ffee;
-}
-body {
-    font-family: "Edu AU VIC WA NT Hand", cursive;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-
-
 }
 
 html{
     scroll-behavior: smooth;
     font-size: 60%;
     overflow: hidden;
-
 }
+ body{
+    background: var(--bg-color);
+    color: var(--text-color);
+ }
 
 .header{
     position: fixed;
@@ -47,7 +43,6 @@ html{
     align-items: center;
     z-index: 5;
     
-
 }
 
 .logo{
