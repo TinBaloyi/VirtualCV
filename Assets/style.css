@@ -200,43 +200,64 @@ span {
     background-color: var(--main-color);
     color: black;
 }
-.text-animation {
+.text-animation{
     font-size: 34px;
     font-weight: 600;
     min-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
 }
-.text-animation span {
+.text-animation span{
     position: relative;
-    display: inline-block;
 }
-.text-animation span::before {
+.text-animation span::before{
     content: "IT Student";
     color: var(--main-color);
-    animation: changeWords 10s steps(1, end) infinite;
+    animation: words 20s infinite;
 }
-.text-animation span::after {
+.text-animation span::after{
     content: "";
     background-color: var(--bg-color);
     position: absolute;
-    width: 100%;
+    width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid var(--main-color);
-    right: 0;
-    animation: cursor 0.6s steps(1) infinite;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite,typing 20s steps(14) infinite;
 }
-@keyframes cursor {
-    to {
-        border-left-color: transparent;
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--main-color);
     }
 }
-@keyframes changeWords {
-    0%, 20%, 100% {
-        content: "IT Student";
-    }
-    40%, 60% {
+@keyframes words{
+    0%,
+    20%{
         content: "Aspiring Data Scientist";
+    }
+    
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
     }
 }
 
