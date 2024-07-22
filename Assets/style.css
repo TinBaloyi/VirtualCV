@@ -485,4 +485,67 @@ span {
     display: inline-block;
     padding: 0 15px;
 }
+.skills_container{
+    row-gap: 2rem;
+    text-align: center;
+}
+.skills_subtitle{
+    margin-bottom: var(--main-color);
+}
+.skills_text{
+    margin-bottom: var(--main-color);
+}
+.skills_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--main-color);
+    padding: 5rem 1rem;
+    margin-bottom: var(--bg-color);
+    border-radius: 5rem;
+    box-shadow: 0 4px var(--main-color);
 
+}
+.skills_icon{
+    font-size: 2rem;
+    margin-right: var(--main-color);
+    color: var(--bg-color);
+}
+.skills_names{
+    display: flex;
+    align-items: center;
+}
+.skills_bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--second-bg-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: var(--main-color);
+}
+.skills_html{
+    width: 95%;
+}
+.skills_css{
+    width: 85%;
+}
+.skills_csharp {
+    width: 95%;
+}
+.skills_python{
+    width: 65%;
+}
+.skills_cplus{
+    width: 95%;
+}
+.skills_java{
+    width: 95%;
+}
+.skills_javascript{
+    width: 95%;
+}
+.skills_git{
+    width: 95%;
+}
