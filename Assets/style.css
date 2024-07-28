@@ -12,10 +12,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 :root {
-    --bg-color: black;
-    --second-bg-color: #9f5050;
-    --text-color: white;
-    --main-color: #00ffee;
+    --bg-color: beige;
+    --second-bg-color: beige;
+    --text-color: #00ffee;;
+    --main-color: rgb(240, 215, 236);
 }
 
 html {
@@ -57,7 +57,7 @@ body {
 }
 .navbar a {
     font-size: 1.8rem;
-    color: var(--text-color);
+    color: var(--main-color);
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -152,7 +152,7 @@ span {
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
     border-radius: 50%;
-    color: beige;
+    color: black;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
@@ -166,7 +166,7 @@ span {
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: beige;
+    background: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
@@ -262,7 +262,6 @@ span {
 }
 
 
-
 .heading{
     font-size: 8rem;
     text-align: center;
@@ -319,7 +318,7 @@ span {
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
-    color: white;
+    color: rgb(14, 14, 14);
     margin: 6px 0 15px;
 }
 .timeline-content{
@@ -337,7 +336,7 @@ span {
 }
 .timeline-content h3{
     font-size: 20px;
-    color: white;
+    color: rgb(20, 20, 20);
     margin: 0 0 10px;
     font-weight: 500;
 }
@@ -490,10 +489,10 @@ span {
     text-align: center;
 }
 .skills_subtitle{
-    margin-bottom: var(--main-color);
+    margin-bottom: pink;
 }
 .skills_text{
-    margin-bottom: var(--main-color);
+    margin-bottom: beige;
 }
 .skills_data{
     display: flex;
@@ -502,50 +501,75 @@ span {
     position: relative;
     font-weight: var(--main-color);
     padding: 5rem 1rem;
-    margin-bottom: var(--bg-color);
+    margin-bottom: pink;
     border-radius: 5rem;
-    box-shadow: 0 4px var(--main-color);
+    box-shadow: 0 4px pink;
+    gap: 10px;
 
 }
 .skills_icon{
-    font-size: 2rem;
-    margin-right: var(--main-color);
-    color: var(--bg-color);
+    font-size: 4rem;
+    margin-right: rgb(128, 219, 240);
+    color: rgb(122, 133, 127);
 }
 .skills_names{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .skills_bar{
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: var(--second-bg-color);
+    background-color: rgb(17, 16, 17);
     height: .25rem;
     border-radius: .5rem;
-    z-index: var(--main-color);
+    z-index: rgb(17, 17, 17);
 }
-.skills_html{
-    width: 95%;
+.skills_percentage{
+    font-size: 18px;
+    color: #333;
+    flex: 0 0 50px;
+    text-align: right;
 }
-.skills_css{
+.skills_bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--skill-percentage);
+}
+.skills_html::after {
+    width: 71%;
+}
+
+.skills_css::after {
+    width: 73%;
+}
+
+.skills_python::after {
+    width: 70%;
+}
+
+.skills_csharp::after {
     width: 85%;
 }
-.skills_csharp {
-    width: 95%;
+
+.skills_java::after {
+    width: 66%;
 }
-.skills_python{
-    width: 65%;
+
+.skills_cplus::after {
+    width: 54%;
 }
-.skills_cplus{
-    width: 95%;
+
+.skills_javascript::after {
+    width: 53%;
 }
-.skills_java{
-    width: 95%;
-}
-.skills_javascript{
-    width: 95%;
-}
-.skills_git{
-    width: 95%;
+
+.skills_git::after {
+    width: 79%;
 }
