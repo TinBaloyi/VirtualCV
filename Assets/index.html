@@ -15,12 +15,37 @@
             <a href="#home" class="logo">Tintswalo <span>Baloyi</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education" class="active">Education</a>
-            <a href="#skills" class="active">Skills</a>
-            <a href="#projects" class="active">Projects</a>
-            <a href="#contact" class="active">Contact</a>
+            <li><a href="#home" class="active">Home</a></li>
+            <li> <a href="#education" class="active">Education</a></li>
+            <li> <a href="#skills" class="active">Skills</a></li>
+            <li> <a href="#projects" class="active">Projects</a></li>
+            <li> <a href="#contact" class="active">Contact</a></li>
         </div>
+    </nav>
+
+    <nav id="hamburger.nav">
+        <a href="#home" class="logo">Tintswalo <span>Baloyi</span></a>
+        <div class="hamburger.menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a>/li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            
+        </div>
+       
+            
+        
     </nav>
     
     <section class="home" id="home">
