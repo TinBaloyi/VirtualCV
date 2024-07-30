@@ -9,40 +9,35 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav id="desktop.nav">
-        
+    <nav id="desktop-nav">
         <div class="logo">Tintswalo Baloyi</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-            <li> <a href="#education" class="active">Education</a></li>
-            <li> <a href="#skills" class="active">Skills</a></li>
-            <li> <a href="#projects" class="active">Projects</a></li>
-            <li> <a href="#contact" class="active">Contact</a></li>
-            </ul>
-        </div>
-        
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#education" class="active">Education</a></li>
+            <li><a href="#skills" class="active">Skills</a></li>
+            <li><a href="#projects" class="active">Projects</a></li>
+            <li><a href="#contact" class="active">Contact</a></li>
+        </ul>
     </nav>
 
-    <nav id="hamburger.nav">
-        <a href="#home" class="logo">Tintswalo <span>Baloyi</span></a>
-        <div class="hamburger.menu">
+    <nav id="hamburger-nav">
+        <div class="logo">Tintswalo Baloyi</div>
+        <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">
+            <ul class="menu-links">
                 <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#education" onclick="toggleMenu()">Education</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
+            </ul>
         </div>     
     </nav>
-     
+
     <script src="script.js"></script>
 </body>
 </html>
-
