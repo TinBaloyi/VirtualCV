@@ -1,11 +1,16 @@
 @media  screen and (max-width: 1200px) {
     #desktop-nav{
         display: none;
+        position: relative;
     }
     #hamburger-nav{
         display: flex;
     }
     .hamburger-icon {
         display: flex; /* Show hamburger icon on small screens */
+    }
+
+    .hamburger-menu {
+        position: relative;
     }
 }
