@@ -29,25 +29,22 @@ body.dark-mode {
 :root {
     --background-color: #F9C1C1;
     --text-color:rgb(145, 208, 241);
-    --nav-background: #ffffff;
-    --link-color: #98FF98;
+    --nav-background: #F9C1C1;
+    --link-color: rgb(145, 208, 241);
     --button-background: rgb(145, 208, 241);
     --button-text: #000000;
-    --main-color: #98FF98;
+    --main-color: rgb(145, 208, 241);
+  }  
     
-}
-
-/* Dark Mode */
 [data-theme="dark"] {
     --background-color: #121212;
-    --text-color: #F9C1C1;
-    --nav-background: #1e1e1e;
-    --link-color: #5816a9;
-    --button-background: #bb86fc;
-    --button-text: #000000;
-    --main-color: #bb86fc;
-   
-}
+    --text-color: #5816a9;  
+    --nav-background: #1e1e1e;  
+    --link-color: #5816a9;  
+    --button-background: #bb86fc;  
+    --button-text: #000000;  
+    --main-color: #bb86fc;  
+  }
 /* Position the theme toggle button */
 .theme-toggle-btn {
     position: absolute;
